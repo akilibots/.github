@@ -1,54 +1,29 @@
+# Akilibots
 
-<img align="right" src="https://dydx.exchange/logo.svg">
+Configurable Python crypto trading bots. Each repository runs independently and
+contains its own configuration, Docker image and regression tests.
 
-# Welcome to akili-bots 🤖
+| Bot | Behaviour | Exchange |
+| --- | --- | --- |
+| [akili-grid](https://github.com/akilibots/akili-grid) | Bounded moving grid | dYdX Chain |
+| [akili-martingale](https://github.com/akilibots/akili-martingale) | Position averaging and weighted take profit | dYdX Chain |
+| [akili-oto](https://github.com/akilibots/akili-oto) | Order-triggering-order groups and loops | dYdX Chain |
+| [akili-tradingview](https://github.com/akilibots/akili-tradingview) | Authenticated TradingView webhooks | dYdX Chain |
+| [akili-dca](https://github.com/akilibots/akili-dca) | Fixed-quantity interval buying or selling | dYdX Chain |
+| [akili-binance-grid](https://github.com/akilibots/akili-binance-grid) | Moving two-order Spot grid | Binance Spot |
 
-[![Telegram](https://badges.aleen42.com/src/telegram.svg)](https://t.me/+9F0CZj8emLc2YTY0)
+[akili-channel](https://github.com/akilibots/akili-channel) is a documentation-only
+predecessor superseded by OTO.
+[akilibots-strategies](https://github.com/akilibots/akilibots-strategies) is intended
+for contributed configurations and currently contains no strategy files.
 
-### After the FTX saga I'm moving 100% defi - so, reprogramming all my bots to work exclusively with dYdX
+Docker runtimes use Python 3.15.2. dYdX bots use Chain wallets and subaccounts;
+legacy v3 API credentials, STARK keys and state cannot be reused. Binance symbols
+are configurable and trading fees are accounted for rather than assumed zero.
+Follow the individual READMEs for testnet setup, credentials, recovery and tests.
 
-### UPDATE: akilibots will now have a closed source commercial version in addition to this open source version.
+Tests run with simulated exchange responses and networking disabled. These
+repositories do not contain a hosted service, mobile app or backtesting engine.
+Trading outcomes depend on configuration, execution and market conditions.
 
-The differences are
-Open Source|Closed Commercial |
---|--|
-Can connect only to DyDx exchange|Can connect to other exchanges |
-Security is largely handled by you|Security handled by akilibots team
-Needs coding skills to use |No development skills needed
-Available as scripts|Available on web and mobile apps
-Support from community|Support from community and akilibots team
-Spotty maintenance (for now)|247/365 maintenance
-Free | Paid🙂
-Non opinionated (you can do really risky stuff)|Has some loss/risky protection (which can be disabled)
-
-
-
-Jambo! and welcome! These are non opinionated trading bots using various strategies to trade crypto assets. The word **akili** means brain or mind in Swahili. The objective here is to make it the most intelligent bot in existence that has as many advanced features as possible, but which at the same time can be used by your typical crypto trader with basic experience.
-
-This, as with all projects was born out of frustration on the lack of features with commercial bots out there. They always missed that little tweak that in my mind would make things a lot more better, and hopefully profitable.
-
-Let's get the usual out of the way...
-
-***DISCLAIMER: This software is for educational purposes only. Do not risk money which you are afraid to lose. USE THE SOFTWARE AT YOUR OWN RISK. THE AUTHORS AND ALL AFFILIATES ASSUME NO RESPONSIBILITY FOR YOUR TRADING RESULTS.***
-
-Working bots are:
-
-🆕akili-oto https://github.com/akilibots/akili-oto
-
-🔥akili-grid https://github.com/akilibots/akili-grid 
-
-📈akili-martingale https://github.com/akilibots/akili-martingale 
-
-📈akili-tradingview https://github.com/akilibots/akili-tradingview
-
-in the kitchen
-
-🍴akili-channel https://github.com/akilibots/akili-channel
-
-🍴akili-dca https://github.com/akilibots/akili-dca
-
-more to follow
-
-The bots use dYdX and will needs certain keys to the exchange. For instructions on how to get your keys for these bots, take a look here https://twitter.com/ChrisJangita/status/1593531663597723648
-
-Here's my afiliate link to dYdX for a 40% discount. I'd appreciate https://dydx.exchange/r/JUDCLWBC
+Software is supplied as is under each repository's licence.
