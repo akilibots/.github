@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" role="img" aria-labelledby="title desc">
+  <title id="title">Akilibots</title>
+  <desc id="desc">A white angular A with a robot face on midnight navy. The inner triangle, eyes and side pieces share the same violet.</desc>
+  <rect width="1254" height="1254" fill="#0B0B18"/>
+  <g fill="#6966FF">
+    <path d="M382 510 277 574Q258 586 258 612V704Q258 726 279 749Z"/>
+    <path d="M872 510 977 574Q996 586 996 612V704Q996 726 975 749Z"/>
+    <path d="M627 417 550 581H704Z"/>
+    <rect x="497" y="695" width="84" height="84" rx="22"/>
+    <rect x="674" y="695" width="84" height="84" rx="22"/>
+  </g>
+  <path fill="#FFFFFF" fill-rule="evenodd" d="M533 247H719L1052 1010H858L818 905H434L395 1010H202ZM627 359 516 581H738ZM465 644H786Q794 644 800 654L863 758 828 817Q824 823 814 823H438Q432 823 428 817L391 758 451 651Q455 644 465 644Z"/>
+</svg>
